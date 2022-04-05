@@ -1,0 +1,112 @@
+body{
+    margin: 10vh 0rem;
+    background-color: #d5e1ef;
+    display: grid;
+    grid-template-columns: 21%;
+    grid-template-rows: 40%;
+    grid-template-areas: 'card';
+    justify-content: center;
+}
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: outfit;
+    src: url(https://fonts.google.com/specimen/Outfit);
+}
+:root{
+    font-size: 10px;
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+    --text-small-weight: 400;
+    --text-large-weight: 700;
+}
+
+div#parent{
+    grid-area: card;
+    padding: 2rem 0.6rem;
+    border-radius: 2rem;
+    background-color: #ffffff;
+}
+div#parent img{
+    display: block;
+    width: 90%;
+    border-radius: 2rem;
+    margin: auto;
+}
+div#parent h2{
+    font-size: 2rem;
+    font-weight: var(--text-large-weight);
+    font-family: outfit,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #1d283c;
+    padding: 0rem 1rem;
+}
+div#parent p{
+    font-size: 1.5rem;
+    font-weight: var(--text-small-weight);
+    font-family: outfit,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #9da2b0;
+    padding: 0rem 1.2rem;
+}
+
+
+/* breakpoints on widths */
+
+/* for large mobile-phones */
+@media only screen and ( max-width:428px ) and ( min-width:0px ){
+    body{
+        grid-template-columns: 90%;
+    }
+}
+
+/* for medium tablets */
+@media only screen and ( max-width:768px ) and ( min-width:429px ){
+    body{
+        grid-template-columns: 48%;
+    }
+}
+
+/* for large tablets and small-sized laptops */
+@media only screen and ( max-width:1024px ) and ( min-width:769px ){
+    body{
+        grid-template-columns: 38%;
+    }
+}
+
+/* for large laptops */
+@media only screen and ( max-width:1204px ) and ( min-width:1025px ){
+    body{
+        grid-template-columns: 25%;
+    }
+}
+
+@media only screen and ( min-width:1205px ) {
+    body{
+        grid-template-columns: 21%;
+    }
+}
+
+/* for extra short devices */
+@media only screen and ( max-height:600px ) and ( min-height:0px ){
+    body{
+        margin: 5vh 0rem;
+    }
+}
+
+/* for medium-heighted devices */
+@media only screen and ( max-height:900px ) and ( min-height:601px ){
+    body{
+        margin: 15vh 0rem;
+    }
+}
+
+/* for tall devices */
+@media only screen and ( max-height:1400px ) and ( min-height:901px ){
+    body{
+        margin: 25vh 0rem;
+    }
+}
